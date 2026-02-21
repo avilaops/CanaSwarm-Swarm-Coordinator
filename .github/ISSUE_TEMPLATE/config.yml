@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentação
+    url: https://github.com/avilaops/agro-tech-ecosystem/blob/main/README.md
+    about: Leia a documentação completa do ecossistema
+  - name: 💬 Discussões
+    url: https://github.com/avilaops/agro-tech-ecosystem/discussions
+    about: Tire dúvidas ou discuta ideias

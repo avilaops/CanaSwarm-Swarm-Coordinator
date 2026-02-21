@@ -1,0 +1,133 @@
+---
+name: ⚙️ Feature / Task
+about: Feature técnica, refactor, bug fix, ou tarefa de engenharia
+title: "[FEATURE] "
+labels: ["triage", "feature"]
+assignees: []
+---
+
+## 📦 Repositório
+
+**Projeto:** (ex: Precision-Agriculture-Platform)
+
+---
+
+## 🎯 Objetivo
+
+**O que essa feature faz? (1 frase)**
+
+---
+
+## 📥 Inputs
+
+**O que essa feature recebe como entrada?**
+
+- (ex: Arquivo shapefile de colheita)
+- (ex: API call com zona_id)
+- (ex: Imagem GPS-tagged)
+
+---
+
+## 📤 Outputs
+
+**O que essa feature produz/retorna?**
+
+- (ex: JSON com recomendações por zona)
+- (ex: Shapefile de prescrição VRA)
+- (ex: Relatório PDF)
+
+---
+
+## ✅ Critério de Aceite (Definition of Done)
+
+**Como sabemos que está pronto?**
+
+- [ ] Código roda localmente (sem erros)
+- [ ] Tem exemplo de uso (README ou script)
+- [ ] Tem teste mínimo (unitário ou integração)
+- [ ] Tem release notes / changelog
+
+**Aceite funcional:**
+- [ ] (ex: Processa 1.000 ha em < 5 minutos)
+- [ ] (ex: Acurácia > 90% no dataset de teste)
+- [ ] (ex: Integração com projeto X funcional)
+
+---
+
+## 🏷️ Classificação
+
+**Layer:** (marque um)
+- [ ] Decision (analytics, ROI, recomendações)
+- [ ] Sensing (vision, sensores, GIS ingest)
+- [ ] Execution (máquina, retrofit, robótica)
+- [ ] Infra (APIs, dados, auth, devops)
+
+**Priority:** (marque um)
+- [ ] P0 — Bloqueador / Dependência crítica
+- [ ] P1 — Importante / Roadmap Q
+- [ ] P2 — Útil / Pode esperar
+- [ ] P3 — Nice-to-have / Tech debt
+
+**Quarter:** (marque um)
+- [ ] Q1-2026 (Jan-Mar)
+- [ ] Q2-2026 (Abr-Jun)
+- [ ] Q3-2026 (Jul-Set)
+- [ ] Q4-2026 (Out-Dez)
+
+**Effort:** (marque um)
+- [ ] XS (< 1 dia)
+- [ ] S (1-3 dias)
+- [ ] M (1 semana)
+- [ ] L (2-4 semanas)
+- [ ] XL (1-3 meses)
+
+**Impact:** (marque um)
+- [ ] High — Crítico para MVP ou cliente pagante
+- [ ] Medium — Melhora significativa
+- [ ] Low — Incremental
+
+---
+
+## 🔗 Dependências
+
+**Essa feature depende de:**
+
+- [ ] Issue #___ (precisa estar pronta antes)
+- [ ] API do projeto X (precisa existir)
+- [ ] Dataset Y (precisa ser coletado)
+
+**Essa feature desbloqueia:**
+
+- [ ] Issue #___ (pode começar depois)
+- [ ] Integração com projeto Z
+
+---
+
+## 📐 Spec Técnica (opcional mas recomendado)
+
+**Arquitetura / Approach:**
+
+(desenho, diagrama, pseudocódigo, ou link para ADR)
+
+**Stack:**
+
+- Linguagem: ___
+- Libs principais: ___
+- Storage: ___
+- Deploy: ___
+
+---
+
+## 🧪 Testes
+
+**Como vai ser testado:**
+
+- [ ] Unit tests (coverage > 70%)
+- [ ] Integration test (fluxo end-to-end)
+- [ ] Manual test (checklist)
+
+---
+
+## 📎 Anexos
+
+(diagramas, links, referências)
