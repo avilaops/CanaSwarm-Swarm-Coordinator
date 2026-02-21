@@ -1,0 +1,608 @@
+{
+  "swarm_session_id": "SWARM-SESSION-20260220-180000",
+  "timestamp": "2026-02-20T18:00:00.000Z",
+  "swarm_config": {
+    "consensus_algorithm": "raft",
+    "task_distribution_method": "auction_based",
+    "formation_type": "flocking",
+    "communication_protocol": "gossip",
+    "heartbeat_interval_seconds": 1.0,
+    "election_timeout_seconds": 5.0,
+    "max_communication_range_m": 500
+  },
+  "swarm_state": {
+    "total_robots": 8,
+    "leader_id": "MICROBOT-004",
+    "consensus_term": 3,
+    "formation_status": "in_formation",
+    "task_queue_size": 5,
+    "active_missions": 4
+  },
+  "robots": [
+    {
+      "robot_id": "MICROBOT-001",
+      "type": "harvester",
+      "position": {
+        "lat": -22.7150,
+        "lon": -47.6500,
+        "altitude_m": 595.2,
+        "heading_deg": 90.0
+      },
+      "velocity": {
+        "linear_ms": 0.5,
+        "angular_deg_per_s": 0.0
+      },
+      "status": {
+        "operational": "charging",
+        "health": "healthy",
+        "battery_soc_percent": 48,
+        "uptime_hours": 8.5
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -65,
+        "latency_ms": 25,
+        "neighbors": ["MICROBOT-002", "MICROBOT-003", "SUPPORTBOT-001"]
+      },
+      "swarm_role": {
+        "role": "follower",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T17:59:59.500Z"
+      },
+      "task_assignment": {
+        "task_id": "TASK-F001-Z003",
+        "task_type": "harvesting",
+        "priority": "medium",
+        "progress_percent": 35,
+        "estimated_completion_minutes": 45
+      },
+      "formation": {
+        "position_in_formation": 1,
+        "formation_id": "FORMATION-ALPHA",
+        "target_position": {
+          "relative_x_m": 5.0,
+          "relative_y_m": 0.0
+        },
+        "distance_to_target_m": 2.3,
+        "alignment_error_deg": 3.5
+      }
+    },
+    {
+      "robot_id": "MICROBOT-002",
+      "type": "harvester",
+      "position": {
+        "lat": -22.7140,
+        "lon": -47.6510,
+        "altitude_m": 598.5,
+        "heading_deg": 135.0
+      },
+      "velocity": {
+        "linear_ms": 1.8,
+        "angular_deg_per_s": 5.0
+      },
+      "status": {
+        "operational": "working",
+        "health": "healthy",
+        "battery_soc_percent": 78,
+        "uptime_hours": 9.2
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -58,
+        "latency_ms": 18,
+        "neighbors": ["MICROBOT-001", "MICROBOT-003", "MICROBOT-004"]
+      },
+      "swarm_role": {
+        "role": "follower",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T17:59:59.800Z"
+      },
+      "task_assignment": {
+        "task_id": "TASK-F001-Z002",
+        "task_type": "harvesting",
+        "priority": "high",
+        "progress_percent": 62,
+        "estimated_completion_minutes": 20
+      },
+      "formation": {
+        "position_in_formation": 2,
+        "formation_id": "FORMATION-ALPHA",
+        "target_position": {
+          "relative_x_m": 5.0,
+          "relative_y_m": 5.0
+        },
+        "distance_to_target_m": 1.8,
+        "alignment_error_deg": 2.1
+      }
+    },
+    {
+      "robot_id": "MICROBOT-003",
+      "type": "harvester",
+      "position": {
+        "lat": -22.7145,
+        "lon": -47.6505,
+        "altitude_m": 596.8,
+        "heading_deg": 180.0
+      },
+      "velocity": {
+        "linear_ms": 0.0,
+        "angular_deg_per_s": 0.0
+      },
+      "status": {
+        "operational": "idle",
+        "health": "healthy",
+        "battery_soc_percent": 55,
+        "uptime_hours": 7.8
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -72,
+        "latency_ms": 32,
+        "neighbors": ["MICROBOT-001", "MICROBOT-002", "MICROBOT-004"]
+      },
+      "swarm_role": {
+        "role": "follower",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T17:59:59.200Z"
+      },
+      "task_assignment": null,
+      "formation": {
+        "position_in_formation": 3,
+        "formation_id": "FORMATION-ALPHA",
+        "target_position": {
+          "relative_x_m": 10.0,
+          "relative_y_m": 2.5
+        },
+        "distance_to_target_m": 8.5,
+        "alignment_error_deg": 12.0
+      }
+    },
+    {
+      "robot_id": "MICROBOT-004",
+      "type": "harvester",
+      "position": {
+        "lat": -22.7135,
+        "lon": -47.6515,
+        "altitude_m": 600.0,
+        "heading_deg": 90.0
+      },
+      "velocity": {
+        "linear_ms": 1.5,
+        "angular_deg_per_s": 0.0
+      },
+      "status": {
+        "operational": "working",
+        "health": "healthy",
+        "battery_soc_percent": 82,
+        "uptime_hours": 10.5
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -55,
+        "latency_ms": 12,
+        "neighbors": ["MICROBOT-002", "MICROBOT-003", "SUPPORTBOT-001", "SUPPORTBOT-002"]
+      },
+      "swarm_role": {
+        "role": "leader",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T18:00:00.000Z"
+      },
+      "task_assignment": {
+        "task_id": "TASK-F001-Z001",
+        "task_type": "harvesting",
+        "priority": "high",
+        "progress_percent": 45,
+        "estimated_completion_minutes": 30
+      },
+      "formation": {
+        "position_in_formation": 0,
+        "formation_id": "FORMATION-ALPHA",
+        "target_position": {
+          "relative_x_m": 0.0,
+          "relative_y_m": 0.0
+        },
+        "distance_to_target_m": 0.0,
+        "alignment_error_deg": 0.0
+      }
+    },
+    {
+      "robot_id": "SUPPORTBOT-001",
+      "type": "transport",
+      "position": {
+        "lat": -22.7160,
+        "lon": -47.6490,
+        "altitude_m": 592.0,
+        "heading_deg": 270.0
+      },
+      "velocity": {
+        "linear_ms": 2.2,
+        "angular_deg_per_s": 0.0
+      },
+      "status": {
+        "operational": "working",
+        "health": "healthy",
+        "battery_soc_percent": 68,
+        "uptime_hours": 7.8
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -68,
+        "latency_ms": 28,
+        "neighbors": ["MICROBOT-001", "MICROBOT-004", "SUPPORTBOT-002"]
+      },
+      "swarm_role": {
+        "role": "follower",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T17:59:59.600Z"
+      },
+      "task_assignment": {
+        "task_id": "TASK-TRANSPORT-002",
+        "task_type": "transporting",
+        "priority": "medium",
+        "progress_percent": 72,
+        "estimated_completion_minutes": 8
+      },
+      "formation": {
+        "position_in_formation": null,
+        "formation_id": null,
+        "target_position": null,
+        "distance_to_target_m": null,
+        "alignment_error_deg": null
+      }
+    },
+    {
+      "robot_id": "SUPPORTBOT-002",
+      "type": "transport",
+      "position": {
+        "lat": -22.7155,
+        "lon": -47.6495,
+        "altitude_m": 594.5,
+        "heading_deg": 45.0
+      },
+      "velocity": {
+        "linear_ms": 0.0,
+        "angular_deg_per_s": 0.0
+      },
+      "status": {
+        "operational": "idle",
+        "health": "warning",
+        "battery_soc_percent": 42,
+        "uptime_hours": 6.5
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -78,
+        "latency_ms": 45,
+        "neighbors": ["MICROBOT-004", "SUPPORTBOT-001"]
+      },
+      "swarm_role": {
+        "role": "follower",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T17:59:58.800Z"
+      },
+      "task_assignment": null,
+      "formation": {
+        "position_in_formation": null,
+        "formation_id": null,
+        "target_position": null,
+        "distance_to_target_m": null,
+        "alignment_error_deg": null
+      }
+    },
+    {
+      "robot_id": "MAINTENANCEBOT-001",
+      "type": "maintenance",
+      "position": {
+        "lat": -22.7170,
+        "lon": -47.6485,
+        "altitude_m": 590.0,
+        "heading_deg": 0.0
+      },
+      "velocity": {
+        "linear_ms": 0.0,
+        "angular_deg_per_s": 0.0
+      },
+      "status": {
+        "operational": "idle",
+        "health": "healthy",
+        "battery_soc_percent": 88,
+        "uptime_hours": 5.2
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -82,
+        "latency_ms": 52,
+        "neighbors": ["SUPPORTBOT-001"]
+      },
+      "swarm_role": {
+        "role": "follower",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T17:59:58.500Z"
+      },
+      "task_assignment": null,
+      "formation": {
+        "position_in_formation": null,
+        "formation_id": null,
+        "target_position": null,
+        "distance_to_target_m": null,
+        "alignment_error_deg": null
+      }
+    },
+    {
+      "robot_id": "INSPECTIONBOT-001",
+      "type": "inspection",
+      "position": {
+        "lat": -22.7165,
+        "lon": -47.6520,
+        "altitude_m": 593.0,
+        "heading_deg": 315.0
+      },
+      "velocity": {
+        "linear_ms": 1.0,
+        "angular_deg_per_s": 0.0
+      },
+      "status": {
+        "operational": "working",
+        "health": "healthy",
+        "battery_soc_percent": 91,
+        "uptime_hours": 6.8
+      },
+      "communication": {
+        "connected": true,
+        "signal_strength_dbm": -88,
+        "latency_ms": 68,
+        "neighbors": []
+      },
+      "swarm_role": {
+        "role": "follower",
+        "voted_for": "MICROBOT-004",
+        "term": 3,
+        "last_heartbeat": "2026-02-20T17:59:57.800Z"
+      },
+      "task_assignment": {
+        "task_id": "TASK-INSPECT-001",
+        "task_type": "inspecting",
+        "priority": "low",
+        "progress_percent": 28,
+        "estimated_completion_minutes": 60
+      },
+      "formation": {
+        "position_in_formation": null,
+        "formation_id": null,
+        "target_position": null,
+        "distance_to_target_m": null,
+        "alignment_error_deg": null
+      }
+    }
+  ],
+  "task_pool": [
+    {
+      "task_id": "TASK-F001-Z004",
+      "task_type": "harvesting",
+      "priority": "high",
+      "area_ha": 4.5,
+      "location": {
+        "zone_id": "Z004",
+        "centroid": {
+          "lat": -22.7125,
+          "lon": -47.6525
+        }
+      },
+      "requirements": {
+        "robot_type": "harvester",
+        "min_battery_percent": 50,
+        "estimated_duration_minutes": 40
+      },
+      "bids": [
+        {
+          "robot_id": "MICROBOT-003",
+          "bid_value": 0.85,
+          "estimated_cost_kwh": 1.2,
+          "estimated_time_minutes": 38
+        }
+      ],
+      "status": "bidding",
+      "deadline": "2026-02-20T19:00:00.000Z"
+    },
+    {
+      "task_id": "TASK-F001-Z005",
+      "task_type": "harvesting",
+      "priority": "medium",
+      "area_ha": 3.8,
+      "location": {
+        "zone_id": "Z005",
+        "centroid": {
+          "lat": -22.7120,
+          "lon": -47.6530
+        }
+      },
+      "requirements": {
+        "robot_type": "harvester",
+        "min_battery_percent": 40,
+        "estimated_duration_minutes": 35
+      },
+      "bids": [],
+      "status": "open",
+      "deadline": "2026-02-20T19:30:00.000Z"
+    },
+    {
+      "task_id": "TASK-TRANSPORT-003",
+      "task_type": "transporting",
+      "priority": "medium",
+      "cargo": {
+        "mass_kg": 350,
+        "volume_m3": 2.5,
+        "type": "harvested_cane"
+      },
+      "route": {
+        "origin": {
+          "lat": -22.7140,
+          "lon": -47.6510
+        },
+        "destination": {
+          "lat": -22.7180,
+          "lon": -47.6470
+        },
+        "distance_km": 0.8
+      },
+      "requirements": {
+        "robot_type": "transport",
+        "min_battery_percent": 30,
+        "estimated_duration_minutes": 15
+      },
+      "bids": [
+        {
+          "robot_id": "SUPPORTBOT-002",
+          "bid_value": 0.62,
+          "estimated_cost_kwh": 0.5,
+          "estimated_time_minutes": 18
+        }
+      ],
+      "status": "bidding",
+      "deadline": "2026-02-20T18:30:00.000Z"
+    },
+    {
+      "task_id": "TASK-MAINTENANCE-001",
+      "task_type": "maintenance",
+      "priority": "low",
+      "target_robot_id": "MICROBOT-001",
+      "issue": "battery_calibration",
+      "location": {
+        "lat": -22.7150,
+        "lon": -47.6500
+      },
+      "requirements": {
+        "robot_type": "maintenance",
+        "min_battery_percent": 50,
+        "estimated_duration_minutes": 25
+      },
+      "bids": [],
+      "status": "open",
+      "deadline": "2026-02-20T20:00:00.000Z"
+    },
+    {
+      "task_id": "TASK-INSPECT-002",
+      "task_type": "inspecting",
+      "priority": "low",
+      "area_ha": 10.0,
+      "location": {
+        "zone_id": "Z008",
+        "centroid": {
+          "lat": -22.7110,
+          "lon": -47.6540
+        }
+      },
+      "requirements": {
+        "robot_type": "inspection",
+        "min_battery_percent": 60,
+        "estimated_duration_minutes": 90
+      },
+      "bids": [],
+      "status": "open",
+      "deadline": "2026-02-20T21:00:00.000Z"
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "2026-02-20T17:58:45.000Z",
+      "type": "leader_election",
+      "details": {
+        "new_leader": "MICROBOT-004",
+        "term": 3,
+        "votes": 7,
+        "total_robots": 8
+      }
+    },
+    {
+      "timestamp": "2026-02-20T17:55:30.000Z",
+      "type": "formation_updated",
+      "details": {
+        "formation_id": "FORMATION-ALPHA",
+        "formation_type": "flocking",
+        "robots_count": 4,
+        "cohesion": 0.92,
+        "alignment": 0.88,
+        "separation": 0.95
+      }
+    },
+    {
+      "timestamp": "2026-02-20T17:52:15.000Z",
+      "type": "task_allocated",
+      "details": {
+        "task_id": "TASK-TRANSPORT-002",
+        "robot_id": "SUPPORTBOT-001",
+        "allocation_method": "auction",
+        "winning_bid": 0.78
+      }
+    },
+    {
+      "timestamp": "2026-02-20T17:50:00.000Z",
+      "type": "robot_disconnected",
+      "details": {
+        "robot_id": "INSPECTIONBOT-001",
+        "reason": "signal_weak",
+        "duration_seconds": 120,
+        "recovered": true
+      }
+    }
+  ],
+  "network_topology": {
+    "graph": {
+      "nodes": ["MICROBOT-001", "MICROBOT-002", "MICROBOT-003", "MICROBOT-004", "SUPPORTBOT-001", "SUPPORTBOT-002", "MAINTENANCEBOT-001", "INSPECTIONBOT-001"],
+      "edges": [
+        {"from": "MICROBOT-001", "to": "MICROBOT-002", "weight": 0.95},
+        {"from": "MICROBOT-001", "to": "MICROBOT-003", "weight": 0.88},
+        {"from": "MICROBOT-001", "to": "SUPPORTBOT-001", "weight": 0.82},
+        {"from": "MICROBOT-002", "to": "MICROBOT-003", "weight": 0.92},
+        {"from": "MICROBOT-002", "to": "MICROBOT-004", "weight": 0.98},
+        {"from": "MICROBOT-003", "to": "MICROBOT-004", "weight": 0.85},
+        {"from": "MICROBOT-004", "to": "SUPPORTBOT-001", "weight": 0.90},
+        {"from": "MICROBOT-004", "to": "SUPPORTBOT-002", "weight": 0.75},
+        {"from": "SUPPORTBOT-001", "to": "SUPPORTBOT-002", "weight": 0.80},
+        {"from": "SUPPORTBOT-001", "to": "MAINTENANCEBOT-001", "weight": 0.70}
+      ]
+    },
+    "connectivity": {
+      "average_degree": 2.5,
+      "clustering_coefficient": 0.68,
+      "diameter": 4,
+      "connected": true,
+      "partitions": 0
+    }
+  },
+  "performance_metrics": {
+    "consensus": {
+      "election_count": 3,
+      "last_election_duration_seconds": 2.3,
+      "heartbeat_success_rate_percent": 98.5,
+      "split_brain_incidents": 0
+    },
+    "task_distribution": {
+      "tasks_allocated": 12,
+      "tasks_pending": 5,
+      "allocation_latency_avg_seconds": 1.8,
+      "auction_rounds_avg": 2.3,
+      "utilization_percent": 62.5
+    },
+    "formation": {
+      "formation_accuracy_percent": 87.5,
+      "cohesion_score": 0.92,
+      "alignment_score": 0.88,
+      "separation_score": 0.95,
+      "collision_avoidance_success_rate_percent": 100.0
+    },
+    "communication": {
+      "message_throughput_per_second": 125,
+      "average_latency_ms": 35,
+      "packet_loss_percent": 0.5,
+      "bandwidth_usage_kbps": 248
+    }
+  }
+}
